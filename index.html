@@ -7,41 +7,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- ТОЛЬКО TWEEN оставляем как глобальный -->
     <script src="https://unpkg.com/three@0.162.0/examples/jsm/libs/tween.module.min.js"></script>
     
     <title>SGSHOOTER - Menu</title>
-    <script type="module" crossorigin src="./assets/main-G4rjsG8M.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/GLTFLoader-DhGXkMM9.js">
-    <link rel="stylesheet" crossorigin href="./assets/main-BLAWxzuG.css">
+    <script type="module" crossorigin src="./assets/main--hJnnStA.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/GLTFLoader-DwKRNB9j.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-p3KUX-hK.css">
   </head>
   <body class="menu-body">
-    <!-- 3D Preview Canvas -->
     <div class="preview-container">
       <canvas id="modelPreview"></canvas>
       <div class="preview-label"></div>
     </div>
-
-    <!-- Main Menu -->
     <div class="menu-container">
       <h1 class="game-title">Surf GO Shooter</h1>
-      <h3 class="version-title">v0.1.0</h3>
-      
-      <a href="game.html" class="start-button">
-        <span class="button-text">СТАРТ</span>
-        <span class="button-glow"></span>
-      </a>
+      <h3 class="version-title">v0.1.1</h3>
+      <div class="buttons-holder">
+        <a href="game.html" class="button start-button">
+          <span class="button-text">СТАРТ</span>
+          <span class="button-glow"></span>
+        </a>
+        <a href="settings.html" class="button settings-button">
+          <span class="button-text">НАСТРОЙКИ</span>
+          <span class="button-glow"></span>
+        </a>
+      </div>
       
       <div class="controls-hint">
-        <p>Управление: WASD - движение, ЛКМ - стрельба</p>
+        <p>Управление: WASD - движение, ЛКМ - стрельба, Shift - Рывок</p>
         <p>ESC - пауза | F - парирование</p>
       </div>
     </div>
-    
-    <!-- Background Canvas -->
-    <canvas id="bgCanvas"></canvas>
-    
-    <!-- Загружаем menu.js как модуль -->
+    <canvas id="bgCanvas"></canvas>
   </body>
 </html>

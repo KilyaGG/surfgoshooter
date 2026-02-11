@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGSHOOTER - Settings</title>
+    <script type="module" crossorigin src="./assets/settings-B0s0QECm.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/GLTFLoader-DwKRNB9j.js">
+    <link rel="stylesheet" crossorigin href="./assets/settings-DXH1Ra01.css">
+  </head>
+  <body class="settings-body">
+    <canvas id="bgCanvas"></canvas>
+    
+    <div class="settings-wrapper">
+      <div class="settings-container">
+        <h1 class="settings-title">НАСТРОЙКИ</h1>
+        <p class="settings-subtitle">v0.1.1</p>
+        
+        <div class="settings-form">
+          <div class="setting-field">
+            <label class="setting-label">
+              <span class="label-text">Чувствительность</span>
+              <span class="label-value" id="sensValue">5.0</span>
+            </label>
+            <div class="slider-container">
+              <input type="range" id="sensitivity" min="0.1" max="5.0" step="0.1" value="1.0" class="slider">
+              <div class="slider-track"></div>
+            </div>
+            <span class="setting-hint">0.1 — 5.0</span>
+          </div>
+
+          <div class="setting-field">
+            <label class="setting-label">
+              <span class="label-text">FOV </span>
+              <span class="label-value" id="fovValue">75</span>
+            </label>
+            <div class="slider-container">
+              <input type="range" id="fov" min="50" max="120" step="1" value="75" class="slider">
+              <div class="slider-track"></div>
+            </div>
+            <span class="setting-hint">Поле зрения камеры</span>
+          </div>
+
+          <div class="setting-field checkbox-field">
+            <label class="setting-label">
+              <span class="label-text">Инвертировать мышь</span>
+            </label>
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="mouseInvert" class="checkbox">
+              <label for="mouseInvert" class="checkbox-label"></label>
+            </div>
+            <span class="setting-hint">Инверсия по обеим осям</span>
+          </div>
+            <!--
+          <div class="setting-field">
+            <label class="setting-label">
+              <span class="label-text">Сложность</span>
+            </label>
+            <div class="dropdown-container">
+              <select id="difficulty" class="dropdown">
+                <option value="easy">Лёгкая</option>
+                <option value="normal" selected>Средняя</option>
+                <option value="hard">Сложная</option>
+                <option value="nightmare">Кошмар</option>
+              </select>
+              <span class="dropdown-arrow"></span>
+            </div>
+            <span class="setting-hint">Влияет на здоровье врагов</span>
+          </div>
+            -->
+
+        <div class="action-buttons">
+            <a href="index.html" class="button back-button">
+              <span class="button-text">НАЗАД</span>
+              <span class="button-glow"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview-container right-preview">
+        <canvas id="settingsPreview"></canvas>
+        <div class="preview-label">ТЕСТ ИЗМЕНЕНИЙ</div>
+      </div>
+    </div>
+
+  </body>
+</html>
